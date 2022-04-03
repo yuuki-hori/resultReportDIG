@@ -1,0 +1,128 @@
+/* $brandColor: darkorchid;
+
+
+.body {
+  font-family: system-ui;
+  background: linear-gradient(to bottom,
+    $brandColor,
+    darken($brandColor, 15%)
+  );
+  color: white;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+} */
+
+* {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    height: 5%;
+    width: 100%;
+}
+.site-titile {
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.site-sub-title {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 0px;
+    font-size: 50%;
+}
+
+#calc-zone {
+    background-color:#E2E3CB;
+    /* height: 60%; */
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+.history {
+    display: block;
+
+}
+.history-menu {
+    display: inline;
+    padding-left: 30px;
+}
+#calc-machine {
+    display: flex;
+    flex-direction: row;
+}
+.calc {
+    display: block;
+    margin:0;
+}
+#history {
+    height: auto;
+    width: auto;
+    margin: 10px;
+}
+/* .scroll {
+    overflow:auto;
+} */
+
+#txt-input {
+    background-color: #333;
+    color: white;
+    font-size: 5vh;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: right;
+}
+.btn-number {
+    color: black;
+    background-color:lightgray;
+    border:1px solid gray;
+    /* margin: 0.5; */
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+.btn-symbol, #btn-clear, #btn-bs, #btn-percent, #btn-invert {
+    color: white;
+    background-color:#F68B1F;
+    border: 1px solid orangered;
+    /* margin: 0.5; */
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+#btn-enter {
+    color: white;
+    background-color:#EF4123;
+    border: 1px solid orangered;
+    /* margin: 1; */
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.CC {
+    display: none;
+}
+/* .btn-number.btn--shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+} */ 

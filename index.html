@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <title>resultReportDIG</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img src=https://cdn-icons-png.flaticon.com/128/2344/2344132.png height="40px", width="40px" margin="auto">
+      <h1 class="site-title">
+        <!-- <a href="https://www.webdentaku.com/">DIG電卓</a> -->
+        DIG電卓
+      </h1>
+      <div class="site-sub-title">
+        <p>https://www.digdentaku.com/</p>
+        <p>計算式/履歴が見えるメモリー電卓アプリ</p>
+      </div>
+    </div>
+    <div id="calc-zone">
+      <div id="calc-machine">
+        <div class="histroy">
+          <div class="history-menu">
+            <!-- <span class="hi">
+              <i class="i">
+                ::before
+              </i>
+              "履歴"
+            </span> -->
+            <text>履歴</text>
+            <button type="text" id="outTxt">Text出力</button>
+            <button type="text" id="historyErase">消去</button>
+          </div>
+          <textarea type="text" id= "history" class="scroll" rows="10" style="text-align: left;" readonly=true></textarea>
+        </div>
+          <table id="btn" class="calc">
+          <tr>
+            <td colspan="4" class="calc" id="txt-input" aria-readonly=true>0</td>
+          </tr>
+          <tr>
+            <td><button colspan="2" type="button" id="btn-clear">AC</button></td>
+            <td><button type="button" id="btn-invert">±</button></td>
+            <td><button type="button" id="btn-percent">%</button></td>
+            <td><button type="button" class="btn-symbol">/</button></td>
+          </tr>
+          <tr>
+            <td><button type="button" class="btn-number">7</button></td>
+            <td><button type="button" class="btn-number">8</button></td>
+            <td><button type="button" class="btn-number">9</button></td>
+            <td><button type="button" class="btn-symbol">*</button></td>
+          </tr>
+          <tr>
+            <td><button type="button" class="btn-number">4</button></td>
+            <td><button type="button" class="btn-number">5</button></td>
+            <td><button type="button" class="btn-number">6</button></td>
+            <td><button type="button" class="btn-symbol">-</button></td>
+          </tr>
+          <tr>
+            <td><button type="button" class="btn-number">1</button></td>
+            <td><button type="button" class="btn-number">2</button></td>
+            <td><button type="button" class="btn-number">3</button></td>
+            <td><button type="button" class="btn-symbol">+</button></td>
+          </tr>
+          <tr>
+            <td><button type="button" class="btn-number">0</button></td>
+            <td><button type="button" class="btn-number">.</button></td>
+            <td><button type="button" id="btn-bs">C</button></td>
+            <td><button type="button" id="btn-enter">=</button></td>
+          </tr>
+        </table>
+      </div>
+      <p>DIG電卓とは？基礎コースで習ったことを使ったりして作った電卓アプリです。計算履歴や計算式が確認できるメモリー機能付き計算機となります。</p>
+    </div>
+    <img class="CC" src="https://uploads-ssl.webflow.com/60642bf52832007469f16b6e/6064674a268dd5753bb1382d_logo_black.png">
+    <iframe class="CC" width="560" height="315" src="https://www.youtube.com/embed/fmgd4PcvC7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <footer id="footer" class="bug">
+      <li>画面サイズに応じた配置変更ができてない</li>
+      <li>答えが[1472237]になる計算をすると何かが起きる。・・・らしい。</li>
+    </footer>
+    <script type="text/javascript" src="./calcFunction.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <!-- <script type="text/python" src="./getBMI.py"></script> -->
+  </body>
+
+</html>
